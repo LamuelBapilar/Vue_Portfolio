@@ -15,6 +15,7 @@
       <div class="info-container" style="align-items:center;">
         <h1>Score: {{ score }}</h1>
         <button @click="startGame" :disabled="gameRunning">Start Game</button>
+        <h5 style="padding-top: 2vh;">press space to jump</h5>
         </div>
       </div>
       </div>
