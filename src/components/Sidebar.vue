@@ -14,7 +14,7 @@
     }
 
     isClose.value = false
-    const sound = new Audio('/sfx/receipt.mp3')
+    const sound = new Audio('./sfx/receipt.mp3')
     sound.volume = 0.5
     sound.play()
 

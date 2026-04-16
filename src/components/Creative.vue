@@ -64,7 +64,7 @@ export default {
 
     flap(e) {
       if (e.code === "Space") {
-        const sound = new Audio('/sfx/spring.mp3')
+        const sound = new Audio('./sfx/spring.mp3')
           sound.volume = 0.5
           sound.play()
         this.bird.velocity = -8;}
@@ -101,7 +101,7 @@ export default {
         if (!pipe.passed && pipe.x + this.pipeWidth < this.bird.x) {
           this.score++;
           pipe.passed = true;
-          const sound = new Audio('/sfx/sent.mp3')
+          const sound = new Audio('./sfx/sent.mp3')
           sound.volume = 0.5
           sound.play()
         }
@@ -130,7 +130,7 @@ export default {
       this.gameRunning = false;
       cancelAnimationFrame(this.loopId);
       window.removeEventListener("keydown", this.flap);
-      const sound = new Audio('/sfx/receipt.mp3')
+      const sound = new Audio('./sfx/receipt.mp3')
       sound.volume = 0.5
       sound.play()
       alert("Game Over! Score: " + this.score);

@@ -11,15 +11,15 @@ import { createStore } from 'vuex'
 // Pinia
 import { createPinia } from 'pinia'
 
-// Vue Router
-import { createRouter, createWebHistory } from 'vue-router'
+// Vue Router 
+import { createRouter, createWebHashHistory } from 'vue-router'
+
+// Pages
 import LoginPage from './components/Login.vue'
 import ProfilePage from './components/Profile.vue'
 import ContactPage from './components/Contact.vue'
 import ShowcasePage from './components/Showcase.vue'
 import CreativePage from './components/Creative.vue'
-
-
 
 // Routes
 const routes = [
@@ -31,9 +31,9 @@ const routes = [
   { path: '/portfolio/creative', name: 'creative', component: CreativePage },
 ]
 
-// Router instance
+// Router instance (FIXED)
 const router = createRouter({
-  history: createWebHistory(),
+  history: createWebHashHistory(), // 🔥 IMPORTANT
   routes
 })
 

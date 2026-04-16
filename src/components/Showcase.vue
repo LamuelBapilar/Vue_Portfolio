@@ -57,22 +57,22 @@ export default {
       slides: [
         {
           images: [
-            '/tips-eats1.png',
-             '/tips-eats2.png'
+            './tips-eats1.png',
+             './tips-eats2.png'
           ],
           description: "Tips & Eats: is a social media platform where people can post food, share orders, and follow recipes from creators around the country. It helps users discover local dishes while supporting nearby stores and food sellers."
         },
         {
           images: [
-            '/bresy.png',
-            '/bresy2.png'
+            './bresy.png',
+            './bresy2.png'
           ],
           description: "Breasy: smart portable nebulizer device paired with a mobile app that tracks breathing sessions and health data in real time. It is designed to be lightweight, rechargeable, and solar-powered."
         },
         {
           images: [
-            '/game1.png',
-            '/game3.png'
+            './game1.png',
+            './game3.png'
           ],
           description: "LOCKDOWN: Manila: You enter dangerous areas to loot, survive enemy encounters, and escape before the raid ends. Every run is a risk. Get out alive, sell what you looted, and make a profit. In Manila, only smart looters make it home."
         }
