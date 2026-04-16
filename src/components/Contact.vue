@@ -77,7 +77,7 @@ export default {
   this.messages.push(message)
   localStorage.setItem("messages", JSON.stringify(this.messages))
   this.newMessage = ""
-  const sound = new Audio('/sfx/sent.mp3')
+  const sound = new Audio('./sfx/sent.mp3')
   sound.volume = 0.5
   sound.play()
 }
